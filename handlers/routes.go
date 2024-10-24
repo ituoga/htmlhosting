@@ -31,7 +31,7 @@ func SetupRoutes(logger *slog.Logger, router chi.Router) error {
 	if err := errors.Join(
 		SetupManifest(router, sessionStore, ns),
 		SetupHome(router, sessionStore, ns),
-		SetupApi(logger, router, sessionStore, ns),
+		// SetupApi(logger, router, sessionStore, ns),
 	); err != nil {
 		return fmt.Errorf("error setting up routes: %w", err)
 	}

@@ -1,0 +1,28 @@
+package main
+
+import (
+	"fmt"
+	"log"
+)
+
+func main() {
+	sourceDir := "./example_directory" // Directory to be uploaded
+	zipFilePath := "./example_directory.zip"
+	uploadURL := "http://localhost:8080/upload" // Replace with your server endpoint
+
+	// Step 1: Zip the directory
+	fmt.Println("Zipping directory...")
+	err := ZipDirectory(sourceDir, zipFilePath)
+	if err != nil {
+		log.Fatalf("Failed to zip directory: %v", err)
+	}
+	fmt.Println("Directory zipped successfully.")
+
+	// Step 2: Upload the ZIP file
+	fmt.Println("Uploading ZIP file...")
+	err = UploadFile(uploadURL, zipFilePath)
+	if err != nil {
+		log.Fatalf("Failed to upload file: %v", err)
+	}
+	fmt.Println("File uploaded successfully.")
+}

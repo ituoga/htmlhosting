@@ -11,7 +11,7 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/gorilla/sessions"
 	"github.com/invopop/ctxi18n"
-	"github.com/ituoga/go-start/locales"
+	"github.com/ituoga/htmlhosting/locales"
 )
 
 func SetupRoutes(logger *slog.Logger, router chi.Router) error {

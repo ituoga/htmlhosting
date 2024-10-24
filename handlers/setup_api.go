@@ -11,7 +11,7 @@ import (
 	"github.com/delaneyj/toolbelt/embeddednats"
 	"github.com/go-chi/chi/v5"
 	"github.com/gorilla/sessions"
-	"github.com/ituoga/go-start/pkg/archive"
+	"github.com/ituoga/htmlhosting/pkg/archive"
 )
 
 func SetupApi(logger *slog.Logger, router chi.Router, session sessions.Store, ns *embeddednats.Server) error {

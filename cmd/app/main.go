@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
-	"github.com/ituoga/go-start/handlers"
+	"github.com/ituoga/htmlhosting/handlers"
 	"golang.org/x/sync/errgroup"
 )
 

@@ -1,4 +1,4 @@
-module github.com/ituoga/go-start
+module github.com/ituoga/htmlhosting
 
 go 1.23.1
 
